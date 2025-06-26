@@ -1,0 +1,256 @@
+.carousel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  width: 100%;
+  flex-shrink: 0;
+  min-height: 24rem;
+  position: relative;
+}
+
+.slide-bg-1 {
+  background: linear-gradient(135deg, #a855f7 0%, #3b82f6 50%, #06b6d4 100%);
+}
+
+.slide-bg-2 {
+  background: linear-gradient(135deg, #ef4444 0%, #ec4899 50%, #f97316 100%);
+}
+
+.slide-bg-3 {
+  background: linear-gradient(135deg, #22c55e 0%, #14b8a6 50%, #3b82f6 100%);
+}
+
+.slide-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  height: 100%;
+  color: white;
+}
+
+.slide-left {
+  flex: 1;
+}
+
+.slide-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.icon-planet {
+  width: 2rem;
+  height: 2rem;
+  background: rgba(59, 130, 246, 0.8);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-planet::after {
+  content: '';
+  width: 1.5rem;
+  height: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.25rem;
+}
+
+.slide-decorations {
+  font-size: 1.5rem;
+}
+
+.slide-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+}
+
+.slide-subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+}
+
+.slide-offer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.discount {
+  font-size: 3.75rem;
+  font-weight: 900;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.feature-icon {
+  width: 2rem;
+  height: 2rem;
+  background: rgba(168, 85, 247, 0.3);
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon::after {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  background: #a855f7;
+  border-radius: 0.125rem;
+}
+
+.slide-products {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product-item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.refrigerator .product-main {
+  width: 6rem;
+  height: 8rem;
+  background: #e5e7eb;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.refrigerator .product-detail {
+  width: 4rem;
+  height: 4rem;
+  background: #d1d5db;
+  border-radius: 0.5rem;
+}
+
+.washer-drum {
+  width: 6rem;
+  height: 6rem;
+  background: #e5e7eb;
+  border-radius: 50%;
+  border: 4px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drum-inner {
+  width: 4rem;
+  height: 4rem;
+  background: #9ca3af;
+  border-radius: 50%;
+}
+
+.tv-screen {
+  width: 8rem;
+  height: 5rem;
+  background: #1f2937;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tv-content {
+  color: white;
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.slide-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+
+.star-1 { top: 2rem; right: 2rem; }
+.star-2 { top: 5rem; right: 8rem; }
+.star-3 { bottom: 5rem; left: 33%; }
+.star-4 { bottom: 8rem; right: 25%; font-size: 1.25rem; }
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.carousel-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.carousel-btn-prev { left: 1rem; }
+.carousel-btn-next { right: 1rem; }
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.indicator {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.indicator.active {
+  background: white;
+}

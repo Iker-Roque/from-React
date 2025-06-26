@@ -1,0 +1,57 @@
+.mstore {
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+.additional-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.category-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.category-card {
+  color: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.category-card h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+}
+
+.category-card p {
+  margin: 0 0 1rem 0;
+}
+
+.category-icon {
+  font-size: 2.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  width: 5rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.sports {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+}
+
+.gaming {
+  background: linear-gradient(135deg, #22c55e 0%, #14b8a6 100%);
+}
+
+.home {
+  background: linear-gradient(135deg, #f97316 0%, #ef4444 100%);
+}
